@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnyWebCode V2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body{
+    margin: 0%;
+}
+
+/* NAVBAR */
+.white-Zone{
+    background: 	#404040;
+}
+.main-nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.main-nav li{
+    padding: 20px;
+    font-size: larger;
+    cursor: pointer;
+    color:white
+}
+.main-nav a:hover{
+    color:  #ffad99;
+}
+.logo{
+    font-weight: 700;
+    padding: 0.5%;
+}
+.push{
+    margin-left: auto;
+}
+/* SEARCH */
+.search{
+    color:#f2f2f2;
+    display: inline-flex;
+    flex-grow: 1;
+    margin-left: auto;
+}
+.search input{
+    border-radius: 10em;
+    flex-grow: 1;
+    margin-left: auto;
+    border:0px solid #151515;
+    outline: none;
+    padding: 0.8%;
+    font-weight: 200;
+    font-size: medium;
+}
+/* Search Icon */
+.fas{
+    color: white;
+    padding: 0.8%;
+    display: inline-flex;
+    padding-left: 0.2%;
+}
+.fas:hover{
+    color: #ffad99;
+}
+/* MEADIA QUERIES For NAVBar */
+@media only screen and (max-width:700px){
+    .main-nav li{
+        font-size: medium;
+    }
+    .search input{
+        padding: 0.4%;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media only screen and (max-width:508px){
+    .white-Zone{
+        display: inline-flex;
+    }
+    .main-nav li{
+        font-size: small;
+    }
+    .search input{
+        padding: 0%;
+    }
+}
+/* COVER */
+.cover{
+    display: flex;
+    height: 45vh;
+    margin-top: 0.3%;
+    justify-content: center;
+    align-items: center;
+}
+.cover{
+    background-image: url('https://d24v5oonnj2ncn.cloudfront.net/wp-content/uploads/2018/10/16030301/Amazon-Logo-Black.jpg');
+    background-size: 100% 100%;
+}
+
+/* MEDIA QUERIES FOR COVER */
+@media only screen and (max-width:550px){
+    .cover{
+        height: 50vh;
+    }
+}
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav class="white-Zone sticky">
+        <ul class="main-nav">
+            <li class="logo">AnyWebCode</li>
+            <li> <a>Blog</a> </li>
+            <li> <a>Suggestion</a> </li>
+            <li class="search">
+                <input type="text" placeholder="Search Content">
+                <i class="fas fa-search"></i>
+            </li>
+            <li class="push"> <a>Login</a></li>
+        </ul>
+    </nav>
+        <div class="cover">
+        </div>
+</body>
+</html>
